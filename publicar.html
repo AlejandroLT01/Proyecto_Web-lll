@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Market Place | Publicar</title>
+		<link rel="stylesheet" href="styles/index.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container header-row">
+				<div class="brand">Market Place</div>
+				<nav>
+					<a href="index.html">Inicio</a>
+					<a href="publicar.html">Publicar</a>
+					<a href="publicacion.html">Publicacion</a>
+					<a href="login.html">Iniciar sesion</a>
+				</nav>
+			</div>
+		</header>
+
+		<main class="container publish">
+			<div class="publish-grid">
+				<section class="publish-card">
+					<h1>Crear publicacion</h1>
+					<p>Completa los datos para mostrar tu producto en el market.</p>
+
+					<form class="publish-form">
+						<div class="field">
+							<label for="titulo">Titulo</label>
+							<input type="text" id="titulo" placeholder="Ej. Smartwatch Senda" />
+						</div>
+						<div class="field">
+							<label for="precio">Precio</label>
+							<input type="text" id="precio" placeholder="$1,450 MXN" />
+						</div>
+						<div class="field">
+							<label for="categoria">Categoria</label>
+							<select id="categoria">
+								<option>Tecnologia</option>
+								<option>Hogar</option>
+								<option>Moda</option>
+								<option>Deportes</option>
+							</select>
+						</div>
+						<div class="field">
+							<label for="ubicacion">Ubicacion</label>
+							<input type="text" id="ubicacion" placeholder="Ciudad o colonia" />
+						</div>
+						<div class="field full">
+							<label for="descripcion">Descripcion</label>
+							<textarea id="descripcion" rows="5" placeholder="Describe tu producto..."></textarea>
+						</div>
+						<div class="field full">
+							<label for="fotos">Fotos</label>
+							<div class="upload-box">Arrastra tus fotos aqui</div>
+						</div>
+						<div class="form-actions">
+							<a class="btn" href="index.html">Publicar</a>
+							<a class="btn secondary" href="index.html">Cancelar</a>
+						</div>
+					</form>
+				</section>
+
+				<aside class="publish-card publish-aside">
+					<h2>Consejos rapidos</h2>
+					<ul>
+						<li>Usa un titulo claro y corto.</li>
+						<li>Agrega fotos con buena luz.</li>
+						<li>Indica la ubicacion exacta.</li>
+						<li>Responde rapido para vender mas.</li>
+					</ul>
+					<div class="mini-preview">
+						<div class="mini-thumb"></div>
+						<div>
+							<h3>Vista previa</h3>
+							<p>Asi se vera tu publicacion.</p>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</main>
+
+		<footer>
+			<div class="container">Market Place 2026 · Ayuda · Contacto</div>
+		</footer>
+	</body>
+</html>
